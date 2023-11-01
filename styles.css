@@ -61,18 +61,23 @@ body {
 #section2,
 #section3,
 #section4,
-#section5 {
+#section5,
+#section6 {
     width: 100vw;
     height: 100vh;
 }
 
 #section1 {
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    z-index: -1;
     background-image: url(1319219.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  
+}
+
+#section2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,4 +109,16 @@ body {
 
 .ano {
     font-size: 4.5rem;
+}
+
+#section3 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
