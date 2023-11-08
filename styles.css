@@ -119,6 +119,116 @@ body {
 
 #section6 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+
+.inputbox {
+    position: relative;
+    width: 250px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(243, 243, 255, 1);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color:black;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+
+.inputbox input:focus ~ span {
+    color: rgb(255, 255, 255);
+    transform: translateX(5px) translateY(-25px);
+    font-size: 1em;
+    padding: 0.50px;
+    background: #5B3294;
+    border-left: 1px #000;
+    border-right: 1px black;
+    letter-spacing: 0.2em;
+}
+
+
+.inputbox input:focus {
+    border: 1px solid rgba(243, 243, 255, 1);
+}
+
+.inputbox2 {
+    position: relative;
+    width: 250px;
+    margin-block: 15px;
+}
+
+.inputbox2 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(243, 243, 255, 1);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+
+}
+
+.inputbox2 span {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color:black;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+
+.inputbox2 input:focus ~ span {
+    color: rgb(255, 255, 255);
+    transform: translateX(5px) translateY(-25px);
+    font-size: 1em;
+    padding: 0.50px;
+    background: #533592;
+    border-left: 1px #000;
+    border-right: 1px black;
+    letter-spacing: 0.2em;
+}
+
+.text1 {
+    background: transparent;
+    border: 1px solid rgba(243, 243, 255, 1);
+
+}
+
+.inputbox3 {
+    position: relative;
+    width: 250px;
+    margin-block: 15px;
+}
+ .inputbox3 span {
+    position: absolute;
+    bottom: 30px;
+    right: 200px;
+ }
+
+
