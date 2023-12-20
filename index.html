@@ -16,8 +16,7 @@
                 <li class="list"><a class="element" href="#">HOME</a></li>
                 <li class="list"><a class="element" href="#section3">ABOUT</a></li>
                 <li class="list"><a class="element" href="#section4">SKILL</a></li>
-                <li class="list"><a class="element" href="#section5">NEWS</a></li>
-                <li class="list"><a class="element" href="#section6">CONTACT</a></li>
+                <li class="list"><a class="element" href="#section5">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -31,38 +30,42 @@
 
     </section>
     <section id="section3">
-        <div class="wraper">
-            <p class="text">Hello.I am anano.</p>
+        <div class="wraper-section3">
+            <p class="text">Passionate front-end developer with a flair for creating immersive web experiences.
+                Proficient in HTML, CSS, and JavaScript, I specialize in translating design concepts into seamless,
+                responsive interfaces. Dedicated to staying ahead in the ever-evolving tech landscape, I bring
+                creativity and precision to every project. Committed to delivering visually stunning and user-friendly
+                websites, my goal is to elevate the digital experience. Let the code speak for itself.</p>
         </div>
     </section>
     <section id="section4"></section>
-    <section id="section5"></section>
-    <section id="section6">
-        <div class="wraper-section6">
+    <section id="section5">
+        <div class="wraper-section5">
             <div class="contact">
                 <h1 class="contact1">CONTACT ME</h1>
                 <h1 class="contact1">Email: anano@kopitnari.net</h1>
             </div>
             <div class="message">
-                <form action="">
+                <form name="submit-to-google-sheet">
                     <div class="inputbox">
-                        <input type="text" class="input-field">
+                        <input type="text" class="input-field" id="name" name="Name">
                         <span id='first-text'>Name</span>
                     </div>
                     <div class="inputbox2">
-                        <input type="email" class="input-field">
+                        <input type="email" class="input-field" id="email" name="Email">
                         <span id="second-text">Email</span>
                     </div>
                     <div class="inputbox3">
-                        <textarea id="text-area" class="text1" cols="30" rows="10"></textarea>
+                        <textarea id="text-area" class="text1" cols="30" rows="10" id="message"
+                            name="Message"></textarea>
                         <span id="three-text">Text</span>
                     </div>
-                    <input class="submit" type="submit">
+                    <button class="submit" id="submit" type="submit">Send</button>
                 </form>
             </div>
         </div>
     </section>
-
+    <script src="contact.js"></script>
     <script src="script.js"></script>
 
 </body>
