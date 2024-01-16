@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 * {
     margin: 0;
@@ -274,8 +275,40 @@ body {
 
 .wraper-section3 {
     color: aliceblue;
-    font-size: 1.9rem;
-    font-family:Roboto;
+    font-size: 2rem;
+    font-family: 'Salsa', cursive;
     width: 60%;
     text-align: center;
+}
+
+.section4-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill{
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill i {
+    font-size: 9rem;
+}
+
+.x1 {
+    color: orange;
+}
+
+.x2 {
+    color: blue;
+}
+
+.x3{
+    color: yellow;
 }

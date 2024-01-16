@@ -8,16 +8,16 @@ form.addEventListener('submit', e => {
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            document.getElementById("submit").textContent = "Send Succesfuly🤩";
+            document.getElementById("submit").textContent = "Send Succesfuly";
             setTimeout(() => {
                 document.getElementById("name").value = "";
                 document.getElementById("email").value = "";
-                document.getElementById("message").value = "";
+                document.getElementById("text-area").value = "";
                 document.getElementById("submit").textContent = "Send";
                 document.getElementById("submit").disabled = false;
             }, 3500);
         }).catch(error => {
-            document.getElementById("submit").textContent = "Please Try Again😘"
+            document.getElementById("submit").textContent = "Please Try Again"
             document.getElementById("submit").disabled = false;
         });
 });
