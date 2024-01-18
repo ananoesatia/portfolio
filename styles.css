@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
 
 * {
     margin: 0;
@@ -24,6 +25,7 @@ body {
     align-items: center;
     background: linear-gradient(90deg, rgba(243, 243, 255, 1) 0%, rgba(56, 56, 255, 1) 50%, rgba(197, 190, 255, 1) 100%);
     transition: 0.3s;
+    z-index: 99;
 }
 
 .logo {
@@ -33,6 +35,7 @@ body {
 
 .nav-bar {
     margin-right: 50px;
+    
 }
 
 .list-container {
@@ -94,7 +97,7 @@ body {
 }
 
 .welcome {
-    color: rgb(150, 166, 255);
+    color: rgb(216, 202, 255);
     font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
@@ -134,8 +137,16 @@ body {
 }
 
 .contact1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: antiquewhite;
+    font-family: 'Instrument Serif', serif;
+
+}
+
+.contact2{
+    font-size: 5rem;
+    color: antiquewhite;
+    font-family: 'Instrument Serif', serif;
 
 }
 
@@ -279,6 +290,11 @@ body {
     font-family: 'Salsa', cursive;
     width: 60%;
     text-align: center;
+    border: 10px solid rgb(82, 31, 223);
+    padding: 50px;
+    border-radius: 20px;
+    gap: 10px;
+    backdrop-filter: blur(30px);
 }
 
 .section4-wrapper{
@@ -287,28 +303,67 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .skill{
-    height: 250px;
-    width: 300px;
+    height: 270px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    border: 10px solid rgb(76, 14, 156);
+    border-radius: 25px;
+    gap: 10px;
+    backdrop-filter: blur(30px);
 }
 
 .skill i {
     font-size: 9rem;
+
 }
 
 .x1 {
     color: orange;
+
 }
 
 .x2 {
-    color: blue;
+    color: #0000ff;
+    border: 10px solid #0101a3;
 }
 
 .x3{
     color: yellow;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+    .menu{
+        display: block;
+    }
+    .nav-bar{
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgb(84, 14, 165);
+    }
+    .list-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 100px;
+        margin: 30px 0 0 30px;
+    }
 }
