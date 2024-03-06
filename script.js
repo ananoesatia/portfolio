@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let navBarPosition = false;
     let previousScrollY = window.scrollY;
     window.addEventListener("scroll", () => {
         let currentScrollY = window.scrollY;
@@ -17,17 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".input-field").forEach((element, id) => {
         element.addEventListener("focus", () => {
             if (id === 0) {
-                document.getElementById("first-text").style = "transform: translate(10px, -50px); background-color: #533592; z-index: 2; color:white";
+                document.getElementById("first-text").style = "transform: translateY(-70%); background: #533592; z-index: 2; color:white";
             } else if (id === 1) {
-                document.getElementById("second-text").style = "transform: translate(10px, -50px); background-color: #533592; z-index:  2; color:white";
+                document.getElementById("second-text").style = "transform: translateY(-70%); background-color: #533592; z-index:  2; color:white";
             }
         });
 
         element.addEventListener("blur", () => {
             if (!element.value.trim() && id === 0) {
-                document.getElementById("first-text").style = "transform: translate(10px, -30px); background: transparent; z-index: 0;";
+                document.getElementById("first-text").style = "transform: translateY(50%); background: transparent; z-index: 0;";
             } else if (!element.value.trim() && id === 1) {
-                document.getElementById("second-text").style = "transform: translate(10px, -30px); background: transparent; z-index: 0;";
+                document.getElementById("second-text").style = "transform: translateY(50%); background: transparent; z-index: 0;";
             }
         });
     });
@@ -36,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     textarea.addEventListener("focus", () => {
         if (!textarea.value.trim()) {
-            document.getElementById("three-text").style = "transform: translate(10px, -10px); background: #533592; z-index: 2; color: #FFF";
+            document.getElementById("three-text").style = "transform: translateY(-70%); background: #533592; z-index: 2; color: #FFF";
         }
     });
 
     document.getElementById("text-area").addEventListener("blur", () => {
         if (!textarea.value.trim()) {
-            document.getElementById("three-text").style = "transform: translate(10px, 10px); background: transparent; z-index: 0;";
+            document.getElementById("three-text").style = "transform: translateY(50%); background: transparent; z-index: 0;";
         }
     });
 

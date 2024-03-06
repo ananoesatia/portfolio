@@ -65,7 +65,6 @@ body {
 #section2,
 #section3,
 #section4,
-#section5,
 #section5 {
     width: 100vw;
     height: 100vh;
@@ -74,7 +73,7 @@ body {
 #section1 {
     position: fixed;
     z-index: -1;
-    background-image: url(1319219.jpeg);
+    background-image: url(1319219.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -139,14 +138,12 @@ body {
     font-size: 2.5rem;
     color: antiquewhite;
     font-family: 'Instrument Serif', serif;
-
 }
 
 .contact2 {
     font-size: 5rem;
     color: antiquewhite;
     font-family: 'Instrument Serif', serif;
-
 }
 
 .contact {
@@ -170,96 +167,60 @@ body {
     padding: 30px 50px;
     border: 2px solid white;
     border-radius: 10px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     transform: translateX(-25px);
     width: 50%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputbox {
     position: relative;
-    width: 250px;
-}
-
-.message {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.inputbox input {
-    width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     border: 1px solid rgba(243, 243, 255, 1);
     background: transparent;
     border-radius: 5px;
+    width: 70%;
+}
+
+.input-field {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
     outline: none;
+    border: none;
+    background: transparent;
     color: rgb(255, 255, 255);
     font-size: 1em;
     transition: 0.5s;
 }
 
-.inputbox span {
+.input-text {
     position: absolute;
+    top: 0;
+    left: 10px;
     pointer-events: none;
     font-size: 1em;
     color: black;
     text-transform: uppercase;
     transition: 0.5s;
     font-weight: 700;
-    transform: translate(10px, -30px);
-}
-
-.inputbox2 {
-    position: relative;
-    width: 250px;
-    margin-block: 15px;
-}
-
-.inputbox2 input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(243, 243, 255, 1);
-    background: transparent;
-    border-radius: 5px;
-    outline: none;
-    color: white;
-    font-size: 1em;
-}
-
-.inputbox2 span {
-    position: absolute;
-    pointer-events: none;
-    font-size: 1em;
-    color: black;
-    text-transform: uppercase;
-    transition: 0.5s;
-    font-weight: 700;
-    transform: translate(10px, -30px);
+    transform: translateY(50%);
 }
 
 .text1 {
     background: transparent;
-    border: 1px solid rgba(243, 243, 255, 1);
-
+    border: 1px solid #f3f3ff;
 }
 
 .inputbox3 {
     position: relative;
-    width: 250px;
-    margin-block: 15px;
+    width: 100%;
     outline: transparent;
-}
-
-.inputbox3 span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 1em;
-    font-weight: 700;
-    color: black;
-    text-transform: uppercase;
-    transform: translate(10px, 10px);
-    transition: 0.5s;
 }
 
 #text-area {
@@ -268,7 +229,7 @@ body {
     padding: 15px;
     font-size: 1rem;
     color: #FFF;
-    width: 400px;
+    width: 100%;
     resize: none;
 }
 
@@ -276,8 +237,8 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
-    transition: 0.3s;
     cursor: grab;
+    transition: 0.3s;
 }
 
 .submit:hover {
@@ -285,7 +246,6 @@ body {
 }
 
 .wraper-section3 {
-    
     width: 60%;
     text-align: center;
     border: 10px solid rgb(82, 31, 223);
@@ -295,7 +255,7 @@ body {
     backdrop-filter: blur(30px);
 }
 
-.text{
+.text {
     color: aliceblue;
     font-size: 2rem;
     font-family: 'Salsa', cursive;
@@ -307,9 +267,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.container{
+
+.container {
     width: 90%;
     height: 90%;
     display: flex;
@@ -318,6 +279,7 @@ body {
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .skill {
     height: 270px;
     width: 250px;
@@ -326,7 +288,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-size: 2rem;
-    border: 10px solid rgb(76, 14, 156);
+    border: 5px solid rgb(76, 14, 156);
     border-radius: 25px;
     gap: 10px;
     backdrop-filter: blur(30px);
@@ -359,12 +321,49 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 992px) { 
+    .wraper-section5 {
+        flex-direction: column;
+    }
+
+    .contact {
+        width: 100%;
+        height: 20%;
+        justify-content: flex-end;
+    }
+
+    .message {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .message form {
+        padding: 20px 30px;
+        transform: translateX(0);
+        width: 80%;
+    }
+
+    #text-area {
+        width: 90%;
+    }
+}
 
 @media screen and (max-width:768px) {
+    #header {
+        height: 4rem;
+    }
+
+    #section1 {
+        height: 200vh;
+    }
+
     .nav-bar {
         position: fixed;
         width: 50vw;
-        height: 100vh;
+        height: 120vh;
         top: 0;
         right: -50%;
         transform: translateX(50%);
@@ -391,7 +390,6 @@ body {
     }
 
     .res {
-
         display: flex;
         font-size: 2rem;
     }
@@ -402,37 +400,77 @@ body {
         right: 20px;
     }
 
-    .res:active {
+    .res:active, 
+    .element:active {
         color: #FFF;
+    }
 
+    .section4-wrapper, 
+    .wraper-section5 {
+        height: 700px;
     }
 
     .menu {
         margin-right: 50px;
     }
 
-    .text{
+    .text {
         font-size: 1.5rem;
+    }
+
+    .inputbox3 {
+        width: 100%;
     }
 }
 
 
-@media screen and (max-width:576px) {
-    .nav-bar{
+@media screen and (max-width:610px) {
+    .logo {
+        margin-left: 30px;
+    }
+
+    .nav-bar {
         width: 100%;
     }
 
-    .text{
+    .menu {
+        margin-right: 30px;
+    }
+
+    .text {
         font-size: 1rem;
     }
 
     .ana {
         font-size: 1.5rem;
     }
-    
+
     .ano {
         font-size: 2.5rem;
     }
 
-}
+    .skill {
+        height: 20%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+
+    .skill i {
+        font-size: 6rem;
+        transform: translateX(30px);
+    }
+
+    .skill span {
+        transform: translateX(-20px);
+    }
+
+    .contact2 {
+        font-size: 3rem;
+    }
+
+    .contact1 {
+        font-size: 1rem;
+    }
+
+}
